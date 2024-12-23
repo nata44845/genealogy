@@ -8,7 +8,8 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class DefaultController extends AbstractController
 {
-    #[Route('/crm/default', name: 'app_crm_default')]
+
+    #[Route('/crm', name: 'app_crm_default')]
     public function index(): Response
     {
         return $this->render('crm/default/index.html.twig', [
